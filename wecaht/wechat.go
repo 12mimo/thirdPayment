@@ -1,6 +1,7 @@
 package wecaht
 
 import (
+	"thirdPayment/wecaht/callback"
 	"thirdPayment/wecaht/extend"
 	"thirdPayment/wecaht/merchant"
 	"thirdPayment/wecaht/models"
@@ -16,4 +17,5 @@ type Client struct {
 	Secure   *secure.Service
 	Service  *service.Manager
 	Config   *models.Config
+	Callback *callback.Callback
 }
